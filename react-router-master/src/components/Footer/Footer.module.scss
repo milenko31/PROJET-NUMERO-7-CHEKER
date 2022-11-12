@@ -1,0 +1,26 @@
+.footer {
+  background-color: black;
+  display: flex;
+  margin: 60px auto auto auto;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.icone_and_text {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px 30px 30px;
+}
+
+.kasa_footer {
+  align-self: center;
+}
+
+
+.text_footer {
+  color: white;
+  font-size: 24px;
+}

@@ -1,0 +1,113 @@
+/// MIXIN 
+
+@mixin xs {
+    @media (max-width: 576px) {
+        @content;
+    }
+}
+
+@mixin sm {
+    @media (min-width: 577px) and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin sm-lt {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media (min-width: 769px) and (max-width: 992px) {
+        @content;
+    }
+}
+
+@mixin md-lt {
+    @media (max-width: 992px) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media (min-width: 993px) and (max-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin lg-lt {
+    @media (max-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin xl {
+    @media (min-width: 1201px) {
+        @content;
+    }
+}
+
+
+.h50 {
+    font-size: 20px;
+}
+
+
+
+
+///// _debug.scss
+
+/// @use './mixins' as mixin;
+
+.b1 {
+    background-color: red;
+    border: 1px solid red;
+}
+
+.b2 {
+    background-color: green;
+    border: 1px solid green;
+}
+
+.b3 {
+    background-color: blue;
+    border: 1px solid blue;
+}
+
+.b4 {
+    background-color: purple;
+    border: 1px solid purple;
+}
+
+.br {
+    @include xs {
+        border: 2px solid red;
+    }
+
+    @include sm {
+        border: 2px solid green;
+    }
+
+    @include md {
+        border: 2px solid blue;
+    }
+
+    @include lg {
+        border: 2px solid orange;
+    }
+
+    @include xl {
+        border: 2px solid purple;
+    }
+}
+
+:root {
+    --primary: #ff6348;
+    --gray-1: #20232a;
+    --gray-2: #efefef;
+    --font-family: 'Montserrat', sans-serif;
+    --box-shadow: 0 6px 9px 0 rgb(0 0 0 / 15%);
+    --box-shadow-nav: rgb(0 0 0 / 22%) 0px 2px 18px 0px;
+    --text-color: #444;
+}

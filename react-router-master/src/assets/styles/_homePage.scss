@@ -1,0 +1,34 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+body {
+    margin: 2rem 8rem 2rem 8rem;
+}
+
+//image vers le header avec la phrase en color white
+.heading_picture {
+    border-radius: 25px;
+}
+
+.picture_and_text {
+    position: relative;
+}
+
+.text_on_picture {
+    position: absolute;
+    color: white;
+    font-size: 48px;
+    left: 21%;
+    right: 1%;
+    top: 18%;
+    bottom: 1%;
+}
+
+//section avec les annonces en card
+
+.big_card {
+    background: #F7F7F7;
+    border-radius: 25px;
+}
