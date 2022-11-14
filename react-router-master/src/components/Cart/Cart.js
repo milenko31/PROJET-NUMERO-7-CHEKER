@@ -7,7 +7,7 @@ function Cart() {
     <>
       <div className={`${styles.galleryImage}`}>
         {LogementData.map((l) => (
-          <Link key={l.id} to={`/FicheLogement/${l.id}`}>
+          <Link key={l.id} to={`/Logement/${l.id}`}>
             <div
               className={`${styles.boxKey}`}
               style={{

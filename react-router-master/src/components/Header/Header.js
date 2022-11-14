@@ -6,7 +6,11 @@ function Header() {
   return (
     <header>
       <nav className={`${styles.header}`}>
-        <img className={`${styles.kasa}`} src="LOGO.png" alt="logo de KASA" />
+        <img
+          className={`${styles.kasa}`}
+          src={process.env.PUBLIC_URL + '/LOGO.png'}
+          alt="logo de KASA"
+        />
         <NavLink className={`${styles.homepage}`} end to="/">
           Accueil
         </NavLink>
