@@ -4,7 +4,7 @@ import App from './App'
 import Homepage from './Pages/HomePage/Homepage'
 // import Cart from './components/Cart/Cart'
 import ErrorPage from './Pages/ErrorPage/Errorpage'
-import About from './Pages/About'
+import About from './Pages/About/About'
 import Logement from './Pages/Logement'
 export const router = createBrowserRouter([
   {

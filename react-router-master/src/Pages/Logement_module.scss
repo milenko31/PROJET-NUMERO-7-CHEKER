@@ -1,0 +1,23 @@
+.title {
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 500;
+    color: #FF6060;
+}
+
+
+.location {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    color: #FF6060;
+}
+
+.title_and_location {
+    flex-basis: 50%;
+    margin: 0px 0px 3rem 0;
+}
+
+.title_location_avatar {
+    display: flex;
+}

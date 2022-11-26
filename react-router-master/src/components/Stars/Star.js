@@ -25,5 +25,6 @@ export default function Star({ score }) {
         ),
       )}
     </div>
+
   )
 }

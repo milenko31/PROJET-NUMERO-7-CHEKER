@@ -1,0 +1,36 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+body {
+    margin: 2rem 8rem 2rem 8rem;
+}
+
+//image vers le header avec la phrase en color white
+.heading_picture_2 {
+    border-radius: 25px;
+}
+
+.picture_and_text_2 {
+    margin: 2rem 0 0 0px;
+    position: relative;
+}
+
+.text_on_picture_2 {
+    position: absolute;
+    color: white;
+    font-size: 48px;
+    left: 21%;
+    right: 1%;
+    top: 18%;
+    bottom: 1%;
+}
+
+.container_all_dropdown {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+}

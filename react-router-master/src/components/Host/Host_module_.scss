@@ -1,6 +1,9 @@
 .avatar-comp {
 
-    width: 100%;
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .avatar-picture {
@@ -19,14 +22,17 @@
     border-radius: 50%;
     object-fit: cover;
 }
-}
+
 
 .avatar-name {
 
-    width: 63px;
-    height: 66px;
+    align-content: flex-end;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 15px;
+    justify-content: center;
     text-align: right;
-
-
-}
+    width: 80%;
 }

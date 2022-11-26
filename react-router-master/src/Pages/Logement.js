@@ -4,7 +4,10 @@ import data from '../data/logement_data.json'
 import Tag from '../components/Tags/Tag'
 import Stars from '../components/Stars/Star'
 import Host from '../components/Host/Host'
-import styles from '../components/Host/Host_module.scss'
+import Error from './ErrorPage/Errorpage'
+import styles from './Logement_module.scss'
+import Carrousel from '../components/Carrousel/Carrousel'
+import Dropdown from '../components/Dropdown/Dropdown'
 
 export default function Logement() {
   const [logement, setLogement] = useState({
@@ -27,23 +30,42 @@ export default function Logement() {
     })
   }, [id])
 
+  if (logement.title === undefined) {
+    return <Error />
+  }
+  const slidePics = logement && logement.pictures
+  const equipments = logement && logement.equipments
+  const equip =
+    logement &&
+    equipments.map((item, index) => (
+      <li key={index} className="equipList">
+        {item}
+      </li>
+    ))
+
   return (
     <>
       <div>
-        <h1>{logement.title}</h1>
-        <h2>{logement.location}</h2>
-        <div className="stars">
-          <Stars score={logement.rating} />
-        </div>
-        <Tag logement={logement} />
-        <div className="avatar-comp">
-          <div className="avatar-name">
-            <Host host={avatar.name} />
+        <Carrousel slides={slidePics} />
+        <div className="title_location_avatar">
+          <div className="title_and_location">
+            <h1 className="title">{logement.title}</h1>
+            <h2 className="location">{logement.location}</h2>
+            <Tag logement={logement} />
           </div>
-          <div>
-          <img className="avatar-picture">
-          <Host src={avatar.picture} alt={avatar.id}/>
-      </div>
+          <div className="avatar-comp">
+            <div className="avatar-name">
+              <Host avatar={logement} />
+            </div>
+            <div className="stars">
+              <Stars score={logement.rating} />
+            </div>
+          </div>
+        </div>
+        <div className="collapse-fiche-container">
+          <Dropdown aboutTitle="Description" aboutText={logement.description} />
+          <Dropdown aboutTitle="Équipements" aboutText={equip} />
+        </div>
       </div>
     </>
   )
