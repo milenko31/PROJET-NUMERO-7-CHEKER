@@ -1,9 +1,12 @@
+.dropdown {
+    width: 85%;
+    font-size: 20px;
+
+}
+
 .collapse {
     width: 100%;
     margin: 20px 0;
-
-
-
 
     &__visible {
         background-color: #ff6060;
@@ -15,7 +18,6 @@
         height: 30px;
         padding: 7px 15px;
         border-radius: 5px;
-        width: 100%;
     }
 
     &__toggle {
@@ -29,15 +31,16 @@
             margin: 0;
             padding: 22px 15px;
             pointer-events: none;
-            // @include font(12px, 400);
-
-
+            font-size: 19px;
         }
     }
 }
 
 .collapse-fiche-container {
     display: flex;
+    gap: 25px;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .animated {
@@ -60,11 +63,7 @@
 
 .about-style {
     width: 100%;
-    // @include flex-column;
-
-
 }
-
 
 
 .equipList {

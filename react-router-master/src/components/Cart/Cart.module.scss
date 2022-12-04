@@ -12,7 +12,7 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     border-radius: 25px;
-    width: 95%;
+    width: 100%;
 }
 
 .boxTitre {
@@ -41,6 +41,10 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+/*.boxKey:hover {
+    background-color: #FF6060;
+}*/
 
 .kasa-Body {
     width: 100%;

@@ -1,6 +1,5 @@
 import { useState, useRef, useEffect } from 'react' //import des hooks de base react
 import bot from '../../assets/img/bot_arrow.png'
-import styles from './Dropdown_module.scss'
 
 export default function Dropdown(props) {
   const [toggle, setToggle] = useState(false) // je definie le state du toggle (et false par défaut)
@@ -21,7 +20,7 @@ export default function Dropdown(props) {
   return (
     // affiche le collapse replié par défaut et l'ouvre au clic puis le referme au clic en faisant disparaitre le texte et
     //le style
-    <div className={`dropdown ${props.aboutStyle}`}>
+    <div className="dropdown">
       <div onClick={toggleState} className="collapse__visible">
         <h2>{props.aboutTitle}</h2>
         <img className={toggle ? 'bot rotated' : 'bot'} src={bot} alt="bot" />

@@ -1,6 +1,6 @@
 /// MIXIN 
 
-@mixin xs {
+/*@mixin xs {
     @media (max-width: 576px) {
         @content;
     }
@@ -47,7 +47,7 @@
         @content;
     }
 }
-
+*/
 
 .h50 {
     font-size: 20px;
@@ -80,6 +80,7 @@
     border: 1px solid purple;
 }
 
+/*
 .br {
     @include xs {
         border: 2px solid red;
@@ -101,7 +102,7 @@
         border: 2px solid purple;
     }
 }
-
+*/
 :root {
     --primary: #ff6348;
     --gray-1: #20232a;

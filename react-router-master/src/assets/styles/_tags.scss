@@ -1,0 +1,17 @@
+.tag {
+    display: flex;
+    color: #FFFFFF;
+    margin: 15px 0;
+}
+
+.tagInfo {
+    background: #ff6060;
+    border-radius: 10px;
+    height: 25px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 10px 0 0 !important;
+    padding: 0 10px;
+}

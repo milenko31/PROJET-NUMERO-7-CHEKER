@@ -6,17 +6,26 @@
 
 .kasa {
     margin-right: auto;
+
+    @include mobil_320_to_600 {
+        //height: 47px;
+        //width: 145px;
+        color: blue;
+    }
 }
+
 
 .homepage {
     color: #FF6060;
     font-size: 24px;
-    padding: 20px;
+    padding: 20px 30px 20px 20px;
+    font-family: Montserrat;
 }
 
 .about {
     color: #FF6060;
     text-decoration: none;
     font-size: 24px;
-    padding: 20px;
+    padding: 20px 20px 20px 30px;
+    font-family: Montserrat;
 }

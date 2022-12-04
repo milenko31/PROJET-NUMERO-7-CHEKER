@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import left from '../../assets/img/left_arrow.png'
 import right from '../../assets/img/right_arrow.png'
-import styles from './Carrousel_module.scss'
 
 export default function Carrousel({ slides }) {
   const [current, setCurrent] = useState(0) //je définie l'index du premier slide à 0

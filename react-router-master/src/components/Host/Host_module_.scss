@@ -1,38 +1,37 @@
 .avatar-comp {
-
-    align-items: flex-end;
     display: flex;
     flex-direction: column;
     gap: 15px;
+    align-items: flex-end;
+    flex-basis: 60%;
 }
 
 .avatar-picture {
-    display: flex;
-    margin-left: 10px;
-    width: 32px;
-    height: 32px;
+    // display: flex;
+    // margin-left: 10px;
+    height: 64px;
+    width: 64px;
     border-radius: 50%;
     background: #c4c4c4;
 
-
 }
 
-& img {
-
+.avatar-picture img {
     border-radius: 50%;
-    object-fit: cover;
+    height: 64px;
+    width: 64px;
 }
+
 
 
 .avatar-name {
-
-    align-content: flex-end;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    gap: 15px;
-    justify-content: center;
-    text-align: right;
-    width: 80%;
+    //align-content: flex-end;
+    //align-items: center;
+    //display: flex;
+    //flex-direction: row;
+    // flex-wrap: nowrap;
+    //gap: 15px;
+    //justify-content: center;
+    // text-align: right;
+    //   width: 80%;
 }

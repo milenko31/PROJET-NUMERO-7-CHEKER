@@ -3,9 +3,10 @@
 
 }
 
-body {
-    margin: 2rem 8rem 2rem 8rem;
+h2 {
+    font-weight: 500;
 }
+
 
 //image vers le header avec la phrase en color white
 .heading_picture_2 {
@@ -21,9 +22,9 @@ body {
     position: absolute;
     color: white;
     font-size: 48px;
-    left: 21%;
+    left: 23%;
     right: 1%;
-    top: 18%;
+    top: 5%;
     bottom: 1%;
 }
 
@@ -33,4 +34,5 @@ body {
     flex-direction: column;
     gap: 30px;
     justify-content: center;
+    position: relative;
 }
