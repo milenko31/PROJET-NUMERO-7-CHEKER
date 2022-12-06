@@ -22,7 +22,7 @@ export default function Dropdown(props) {
     //le style
     <div className="dropdown">
       <div onClick={toggleState} className="collapse__visible">
-        <h2>{props.aboutTitle}</h2>
+        <h2 className="h2_dropdown">{props.aboutTitle}</h2>
         <img className={toggle ? 'bot rotated' : 'bot'} src={bot} alt="bot" />
       </div>
       <div

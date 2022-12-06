@@ -6,13 +6,13 @@ export default function ErrorPage() {
   const error = useRouteError()
   return (
     <>
-      <div>
+      <div className="container_404">
         <h1 className="number">404</h1>
         <h2 className="text_after_number">
           Oups! La page que vous demandez n'existe pas.
         </h2>
-        <NavLink classNmae="link_redirect" to="/">
-          Oups! La page que vous demandez n'existe pas.
+        <NavLink className="link_redirect" to="/">
+          Retourner sur la page d'accueil.
         </NavLink>
       </div>
     </>

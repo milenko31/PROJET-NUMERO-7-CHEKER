@@ -3,7 +3,7 @@
     flex-direction: column;
     gap: 15px;
     align-items: flex-end;
-    flex-basis: 60%;
+    flex-basis: 50%;
 }
 
 .avatar-picture {
@@ -22,16 +22,18 @@
     width: 64px;
 }
 
+.picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-
-.avatar-name {
-    //align-content: flex-end;
-    //align-items: center;
-    //display: flex;
-    //flex-direction: row;
-    // flex-wrap: nowrap;
-    //gap: 15px;
-    //justify-content: center;
-    // text-align: right;
-    //   width: 80%;
+.hostName {
+    display: flex;
+    text-align: right;
+    width: 70px;
+    color: #ff6060;
+    margin-right: 15px;
+    font-weight: 600;
+    font-size: 18px;
 }

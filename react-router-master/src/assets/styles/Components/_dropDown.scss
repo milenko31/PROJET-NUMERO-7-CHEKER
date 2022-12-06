@@ -4,6 +4,11 @@
 
 }
 
+.h2_dropdown {
+    font-weight: 500;
+    font-size: 21px;
+}
+
 .collapse {
     width: 100%;
     margin: 20px 0;
@@ -31,7 +36,9 @@
             margin: 0;
             padding: 22px 15px;
             pointer-events: none;
-            font-size: 19px;
+            font-size: 18px;
+            font-weight: 400;
+            font-family: 'Montserrat';
         }
     }
 }

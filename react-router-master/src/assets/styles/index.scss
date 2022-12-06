@@ -1,6 +1,6 @@
 @use 'Utils/variables.scss';
 @use 'Base/color.scss';
-@use 'Utils/media_queries.scss';
+//@use 'Utils/media_queries.scss';
 @use 'Layout/footer.scss';
 @use 'Layout/header.scss';
 @use 'Pages/errorPage.scss';
@@ -11,5 +11,6 @@
 @use 'Components/dropDown.scss';
 @use 'Components/cart.scss';
 @use 'Components/host.scss';
+@use 'Components/stars.scss';
 @use 'Components/carrousel.scss';
 @use 'Base/base.scss';
