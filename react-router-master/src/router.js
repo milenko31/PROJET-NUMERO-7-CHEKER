@@ -5,7 +5,7 @@ import Homepage from './Pages/HomePage/Homepage'
 // import Cart from './components/Cart/Cart'
 import ErrorPage from './Pages/ErrorPage/Errorpage'
 import About from './Pages/About/About'
-import Logement from './Pages/Logement'
+import Logement from './Pages/Logement/Logement'
 export const router = createBrowserRouter([
   {
     path: '/',

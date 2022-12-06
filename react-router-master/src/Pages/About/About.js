@@ -1,18 +1,13 @@
 import React from 'react'
 import image2 from '../../assets/img/picture_about.png'
-import styles from './About_module.scss'
 import Dropdown from '../../components/Dropdown/Dropdown'
 
 export default function About() {
   return (
     <>
-      <div className="picture_and_text_2">
-        <img
-          className="heading_picture_2"
-          src={image2}
-          alt="image au top de la page about"
-        />
-        <p className="text_on_picture_2">Chez vous, partout et ailleurs</p>
+      <div>
+        <div className="imageAbout"></div>
+
         <div className="container_all_dropdown">
           <Dropdown
             aboutTitle="Fiabilité"

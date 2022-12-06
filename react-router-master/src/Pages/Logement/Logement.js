@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router'
-import data from '../data/logement_data.json'
-import Tag from '../components/Tags/Tag'
-import Stars from '../components/Stars/Star'
-import Host from '../components/Host/Host'
-import Error from './ErrorPage/Errorpage'
-import styles from './Logement_module.scss'
-import Carrousel from '../components/Carrousel/Carrousel'
-import Dropdown from '../components/Dropdown/Dropdown'
+import data from '../../data/logement_data.json'
+import Tag from '../../components/Tags/Tag'
+import Stars from '../../components/Stars/Star'
+import Host from '../../components/Host/Host'
+import Error from '../ErrorPage/Errorpage'
+import Carrousel from '../../components/Carrousel/Carrousel'
+import Dropdown from '../../components/Dropdown/Dropdown'
 
 export default function Logement() {
   const [logement, setLogement] = useState({

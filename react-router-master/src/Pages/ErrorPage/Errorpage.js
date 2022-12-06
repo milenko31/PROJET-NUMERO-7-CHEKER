@@ -1,6 +1,5 @@
 import React from 'react'
 import { useRouteError } from 'react-router-dom'
-import styles from './Errorpage_module.scss'
 import { NavLink } from 'react-router-dom'
 
 export default function ErrorPage() {
@@ -12,7 +11,7 @@ export default function ErrorPage() {
         <h2 className="text_after_number">
           Oups! La page que vous demandez n'existe pas.
         </h2>
-        <NavLink classNmae="link_redirect" to="/Homepage">
+        <NavLink classNmae="link_redirect" to="/">
           Oups! La page que vous demandez n'existe pas.
         </NavLink>
       </div>
