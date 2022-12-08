@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 
 function Header() {
   return (
-    <header>
+    <header className="header_container">
       <nav className="header">
         <img
           className="kasa"

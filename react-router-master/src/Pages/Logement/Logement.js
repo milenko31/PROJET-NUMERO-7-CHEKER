@@ -46,12 +46,15 @@ export default function Logement() {
     <>
       <div>
         <Carrousel slides={slidePics} />
-        <div className="title_location_avatar">
-          <div className="title_and_location">
-            <h1 className="title">{logement.title}</h1>
-            <h2 className="location">{logement.location}</h2>
-            <Tag logement={logement} />
+        <div className="container_full_annoncement">
+          <div className="title_location_avatar">
+            <div className="title_and_location">
+              <h1 className="title">{logement.title}</h1>
+              <h2 className="location">{logement.location}</h2>
+              <Tag logement={logement} />
+            </div>
           </div>
+
           <div className="avatar-comp">
             <div className="avatar-name">
               <Host avatar={logement} />

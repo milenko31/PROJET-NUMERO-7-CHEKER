@@ -1,25 +1,53 @@
+.header_container {
+    margin-top: 1rem;
+
+    @media(max-width: 1240px) and (min-width: 600px) {
+        margin: 0;
+    }
+}
+
 .header {
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
-    margin: 2rem 11rem 0rem 8rem;
+    display: flex;
 
-    @media(max-width: 600px) and (min-width: 320px) {
-        align-items: center;
+    @media(max-width: 1240px) and (min-width: 600px) {
         display: flex;
-        justify-content: space-between;
-        margin: 2rem 0.5rem 0rem 0.5rem;
+        margin: 0;
+        align-items: center;
     }
+
+
+    @media(max-width: 600px) and (min-width: 300px) {
+        display: flex;
+        margin: 0;
+        align-items: center;
+    }
+
 
 }
 
 .kasa {
     margin-right: auto;
 
-    @media(max-width: 600px) and (min-width: 320px) {
-        height: 47px;
-        width: 145px;
+    @media(max-width: 600px) and (min-width: 450px) {
+        height: 45px;
+
     }
+
+    height: 45px;
+
+    @media(max-width: 450px) and (min-width: 320px) {
+        height: 40px;
+
+    }
+
+    @media(max-width: 320px) and (min-width: 300px) {
+        margin-right: auto;
+        height: 27px;
+    }
+
 
 }
 
@@ -31,12 +59,24 @@
     padding: 20px 30px 20px 20px;
     font-family: Montserrat;
 
+    @media(max-width: 800px) and (min-width: 600px) {
+        font-size: 20px;
+    }
 
-    @media(max-width: 600px) and (min-width: 320px) {
+    @media(max-width: 600px) and (min-width: 450px) {
+        font-size: 14px;
+        padding: 0px 0px 0px 0px;
+        text-transform: uppercase;
+    }
+
+    @media(max-width: 450px) and (min-width: 300px) {
         font-size: 12px;
         padding: 0px 0px 0px 0px;
         text-transform: uppercase;
     }
+
+
+
 
 }
 
@@ -47,10 +87,26 @@
     padding: 20px 20px 20px 30px;
     font-family: Montserrat;
 
+    @media(max-width: 800px) and (min-width: 600px) {
 
-    @media(max-width: 600px) and (min-width: 320px) {
+        font-size: 20px;
+        padding: 0;
+    }
+
+    @media(max-width: 600px) and (min-width: 450px) {
+        color: #FF6060;
+        text-decoration: none;
+        font-size: 14px;
+        text-transform: uppercase;
+        padding: 0px 0px 0px 25px;
+    }
+
+    @media(max-width: 450px) and (min-width: 300px) {
+        color: #FF6060;
+        text-decoration: none;
         font-size: 12px;
         text-transform: uppercase;
+        padding: 0px 0px 0px 25px;
     }
 
 }

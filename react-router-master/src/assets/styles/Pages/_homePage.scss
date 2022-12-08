@@ -3,6 +3,12 @@
 
 }
 
+.container_picture_header_cart {
+    align-items: center;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
 
 
 //image vers le header avec la phrase en color white
@@ -14,14 +20,32 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('https://images.unsplash.com/photo-1593201464350-96ec57065aa2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80');
-    margin: 2rem 0 0 0;
+    background-image: url('../../img/picture_header_x_larg.png');
+    margin: 2rem 0 3rem 0;
+    width: 100%;
+    border-radius: 25px;
 
-    @media(max-width: 600px) and (min-width: 320px) {
-        margin: 0;
+    @media(max-width: 1900px) and (min-width: 1280px) {
+        background-image: url('../../img/picture_header_larg.png');
     }
 
+    @media(max-width: 1280px) and (min-width: 1000px) {
+        background-image: url('../../img/picture_header.png');
+    }
+
+    @media(max-width: 1000px) and (min-width: 410px) {
+        background-image: url('../../img/picture_header_medium.png');
+    }
+
+    @media(max-width: 410px) and (min-width: 300px) {
+        background-image: url('../../img/picture_header_mini.png');
+    }
+
+    @media(max-width: 600px) and (min-width: 300px) {
+        border-radius: 10px;
+    }
 }
+
 
 .text_on_picture {
 
@@ -30,7 +54,7 @@
     font-size: 48px;
     display: flex;
     width: 100%;
-    height: 220px;
+    height: 223px;
     background-position: center;
     object-fit: cover;
     justify-content: center;
@@ -39,15 +63,85 @@
     background-size: cover;
     background-color: #0000004d;
     background-blend-mode: darken;
+    margin: 0;
 
+    @media(max-width: 900px) and (min-width: 600px) {
+        font-size: 35px;
+        height: 223px;
+        text-align: start;
+        padding-left: 1rem;
+    }
 
-    @media(max-width: 600px) and (min-width: 320px) {
-        font-size: 1.6rem;
+    @media(max-width: 600px) and (min-width: 300px) {
+        font-size: 22px;
         height: 111px;
         text-align: start;
         padding-left: 1rem;
-        padding-right: 7rem;
+        border-radius: 10px;
     }
+
+    @media(max-width: 600px) and (min-width: 350px) {
+        font-size: 22px;
+        height: 111px;
+        text-align: start;
+        border-radius: 10px;
+    }
+
+    @media(max-width: 320px) and (min-width: 319px) {
+        font-size: 22px;
+        padding-left: 1rem;
+        padding-right: 5.9rem;
+        border-radius: 10px;
+    }
+
+    @media(max-width: 319px) and (min-width: 318px) {
+        font-size: 18px;
+        padding-left: 1rem;
+        padding-right: 5.7rem;
+        border-radius: 10px;
+    }
+
+    @media(max-width: 318px) and (min-width: 317px) {
+        font-size: 18px;
+        padding-left: 1rem;
+        padding-right: 5.7rem;
+        border-radius: 10px;
+    }
+
+    @media(max-width: 317px) and (min-width: 310px) {
+        font-size: 18px;
+        padding-left: 1rem;
+        padding-right: 5.5rem;
+        border-radius: 10px;
+    }
+
+    @media(max-width: 316px) and (min-width: 315px) {
+        font-size: 18px;
+        padding-left: 1rem;
+        padding-right: 5.5rem;
+    }
+
+    @media(max-width: 313px) and (min-width: 310px) {
+        font-size: 18px;
+        padding-left: 1rem;
+        padding-right: 5.1rem;
+    }
+
+    @media(max-width: 310px) and (min-width: 309px) {
+        font-size: 18px;
+        padding-left: 1rem;
+        padding-right: 5.3rem;
+    }
+
+    @media(max-width: 309px) and (min-width: 301px) {
+        font-size: 18px;
+        padding-left: 1rem;
+        padding-right: 4.2rem;
+    }
+
+
+
+
 
 }
 

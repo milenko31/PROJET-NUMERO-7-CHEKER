@@ -1,5 +1,4 @@
 import React from 'react'
-import image2 from '../../assets/img/picture_about.png'
 import Dropdown from '../../components/Dropdown/Dropdown'
 
 export default function About() {
