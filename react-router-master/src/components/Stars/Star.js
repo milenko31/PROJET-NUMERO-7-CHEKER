@@ -1,6 +1,6 @@
 import React from 'react'
-import emptyStar from '../../assets/img/étoile_vide.png'
-import fullStar from '../../assets/img/étoile.png'
+import emptyStar from '../../assets/img/étoile_vide.svg'
+import fullStar from '../../assets/img/étoile.svg'
 
 export default function Star({ score }) {
   const stars = [1, 2, 3, 4, 5]
@@ -25,6 +25,5 @@ export default function Star({ score }) {
         ),
       )}
     </div>
-
   )
 }

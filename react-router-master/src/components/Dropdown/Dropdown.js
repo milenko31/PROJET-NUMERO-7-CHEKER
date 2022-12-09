@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from 'react' //import des hooks de base react
-import bot from '../../assets/img/bot_arrow.png'
+import bot from '../../assets/img/bot_arrow.svg'
 
 export default function Dropdown(props) {
   const [toggle, setToggle] = useState(false) // je definie le state du toggle (et false par défaut)

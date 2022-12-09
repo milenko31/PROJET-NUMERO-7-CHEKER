@@ -20,25 +20,25 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('../../img/picture_header_x_larg.png');
+    background-image: url('../../img/picture_header_x_larg.webp');
     margin: 2rem 0 3rem 0;
     width: 100%;
     border-radius: 25px;
 
     @media(max-width: 1860px) and (min-width: 1238px) {
-        background-image: url('../../img/picture_header_larg.png');
+        background-image: url('../../img/picture_header_larg.webp');
     }
 
     @media(max-width: 1238px) and (min-width: 1000px) {
-        background-image: url('../../img/picture_header.png');
+        background-image: url('../../img/picture_header.webp');
     }
 
     @media(max-width: 1000px) and (min-width: 400px) {
-        background-image: url('../../img/picture_header_medium.png');
+        background-image: url('../../img/picture_header_medium.webp');
     }
 
     @media(max-width: 400px) and (min-width: 300px) {
-        background-image: url('../../img/picture_header_mini.png');
+        background-image: url('../../img/picture_header_mini.webp');
     }
 
     @media(max-width: 600px) and (min-width: 300px) {
