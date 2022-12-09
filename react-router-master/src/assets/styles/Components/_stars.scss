@@ -11,6 +11,11 @@
 }
 
 .star {
+    @media(max-width: 800px) and (min-width: 600px) {
+        height: 23px;
+        width: 23px;
+    }
+
     @media(max-width: 600px) and (min-width: 450px) {
         height: 20px;
         width: 20px;

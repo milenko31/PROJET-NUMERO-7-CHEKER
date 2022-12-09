@@ -2,6 +2,7 @@
     width: 85%;
     font-size: 20px;
 
+
     @media(max-width: 600px) and (min-width: 300px) {
         width: 100%;
     }
@@ -24,6 +25,7 @@
 .collapse {
     width: 100%;
     margin: 20px 0;
+
 
     &__visible {
         background-color: #ff6060;
@@ -49,6 +51,7 @@
         transition: opacity 0.4s ease-in-out, height 0.4s 0.4s ease-in-out;
 
 
+
         @media(max-width: 600px) and (min-width: 300px) {
             height: auto;
         }
@@ -62,13 +65,23 @@
             font-weight: 400;
             font-family: 'Montserrat';
 
-            @media(max-width: 700px) and (min-width: 600px) {
-                font-size: 16px;
+            @media(max-width: 1050px) and (min-width: 799px) {
+                font-size: 14px;
                 padding: 15px 15px;
             }
 
+            @media(max-width: 799px) and (min-width: 699px) {
+                font-size: 14px;
+                padding: 15px 15px;
+            }
+
+            @media(max-width: 699px) and (min-width: 600px) {
+                font-size: 13px;
+                padding: 10px 15px;
+            }
+
             @media(max-width: 600px) and (min-width: 450px) {
-                font-size: 16px;
+                font-size: 15px;
 
             }
 
@@ -79,6 +92,7 @@
         }
     }
 }
+
 
 .collapse-fiche-container {
     display: flex;
@@ -93,9 +107,11 @@
 
 }
 
+
 .animated {
     opacity: 1;
     transition: height 0.4s ease-in-out, opacity 0.4s 0.4s ease-in-out;
+
 }
 
 .chevron {
