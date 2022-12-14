@@ -1,7 +1,11 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 function Header() {
+  const location = useLocation()
+  const { pathname } = location
+  const splitLocation = pathname.split('/')
+
   return (
     <header className="header_container">
       <nav className="header">
@@ -10,15 +14,21 @@ function Header() {
           src={process.env.PUBLIC_URL + '/LOGO.png'}
           alt="logo de KASA"
         />
-        <NavLink className="homepage" end to="/">
-          Accueil
-        </NavLink>
-        <NavLink className="about" to="/about">
-          A propos
-        </NavLink>
+        <li className="homepage">
+          <Link to="/" className={splitLocation[1] === '' ? 'active' : ''}>
+            Accueil
+          </Link>
+        </li>
+        <li className="about">
+          <Link
+            to="/about"
+            className={splitLocation[1] === 'about' ? 'active' : ''}
+          >
+            A propos
+          </Link>
+        </li>
       </nav>
     </header>
   )
 }
-
 export default Header

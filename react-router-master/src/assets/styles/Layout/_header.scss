@@ -54,7 +54,7 @@
 
 
 .homepage {
-    color: #FF6060;
+
     font-size: 24px;
     padding: 20px 30px 20px 20px;
     font-family: Montserrat;
@@ -81,7 +81,7 @@
 }
 
 .about {
-    color: #FF6060;
+
     text-decoration: none;
     font-size: 24px;
     padding: 20px 20px 20px 30px;
@@ -94,7 +94,6 @@
     }
 
     @media(max-width: 600px) and (min-width: 450px) {
-        color: #FF6060;
         text-decoration: none;
         font-size: 14px;
         text-transform: uppercase;
@@ -102,7 +101,6 @@
     }
 
     @media(max-width: 450px) and (min-width: 300px) {
-        color: #FF6060;
         text-decoration: none;
         font-size: 12px;
         text-transform: uppercase;
